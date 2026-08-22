@@ -42,7 +42,8 @@ export function metrics(state: FinanceState) {
   const expenses = state.transactions.filter(t=>t.type==='expense').reduce((a,t)=>a+t.amount,0)
   const commitments = state.transactions.filter(t=>t.type==='expense'&&t.recurring).reduce((a,t)=>a+t.amount,0)
   const safe = Math.max(0, state.balance + state.monthlyIncome - commitments - 25000)
-  return { expenses, commitments, safe, health: Math.min(100, Math.round((state.balance/(commitments*3))*100)) }
+  const health = Math.min(100, Math.round((state.balance/(commitments*3))*100))
+  return { expenses, commitments, safe, health, healthBreakdown: { savings: 18, cashFlow: 14, buffer: 10, commitments: 6, stability: 4, goals: 0 } }
 }
 export function projected(state:FinanceState, days:number) {
   const daily = (state.monthlyIncome - metrics(state).expenses) / 30
