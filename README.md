@@ -2,13 +2,13 @@
 
 ## Don't Just Look at Your Balance. Look at Your Future.
 
-**Future You** is an AI-powered financial decision intelligence platform designed to help users understand what they can safely spend today while showing how today's financial decisions may affect their future financial position.
+**Future You** is a forward-looking financial decision intelligence platform designed to help users understand what they can safely spend today and how today's financial decisions may affect their future financial position.
 
 Traditional financial applications mainly answer:
 
 > **"How much money do I have?"**
 
-Future You asks a more useful question:
+Future You focuses on a more useful question:
 
 > **"What can I safely do with my money today without hurting my financial future?"**
 
@@ -18,9 +18,9 @@ Future You asks a more useful question:
 
 ### Current Balance ≠ Safe-to-Spend
 
-Having money in your account does not necessarily mean all of it is available to spend.
+Having money in an account does not necessarily mean all of it is available to spend.
 
-Future You considers:
+Future You considers financial information such as:
 
 * Current balance
 * Upcoming commitments
@@ -28,10 +28,10 @@ Future You considers:
 * Expected expenses
 * Recurring payments
 * Financial goals
-* Emergency/safety buffer
+* Safety buffer
 * Future cash-flow projections
 
-and converts them into an actionable financial picture.
+and turns this information into a clearer financial picture.
 
 ```text
 Financial Data
@@ -50,7 +50,7 @@ Can I Afford?
       ↓
 What-If Simulation
       ↓
-AI-Powered Insights
+Insights
       ↓
 Better Financial Decisions
 ```
@@ -59,7 +59,7 @@ Better Financial Decisions
 
 # 🎯 Problem Statement
 
-Most personal finance applications are backward-looking.
+Most personal finance applications are primarily backward-looking.
 
 They help users understand:
 
@@ -68,32 +68,30 @@ They help users understand:
 * Their current balance
 * Their historical transactions
 
-But users often still struggle with a more important everyday question:
+However, users often still struggle with a more important everyday question:
 
 > **"Can I afford this without creating a financial problem later?"**
 
-For example, a user may have ₹50,000 in their account.
+For example, a user may have ₹50,000 in their account while also having:
 
-However, they may also have:
+* Rent due soon
+* An upcoming EMI
+* Recurring subscriptions
+* Expected expenses
+* A savings goal
+* A safety buffer to maintain
 
-* ₹15,000 rent due soon
-* ₹5,000 EMI
-* ₹3,000 subscriptions
-* ₹7,000 expected expenses
-* A financial goal
-* An emergency buffer to maintain
+The amount available in the account may therefore be very different from the amount that is actually safe to spend.
 
-The actual amount they can safely spend may therefore be much lower than their account balance.
-
-Future You makes these hidden future commitments visible before the user makes a financial decision.
+**Future You is designed to make these future commitments visible before a financial decision is made.**
 
 ---
 
 # 💡 Solution
 
-Future You transforms historical financial information into **forward-looking financial decision intelligence**.
+Future You transforms financial information into **forward-looking financial decision intelligence**.
 
-Instead of simply reporting financial data, it helps users:
+The platform is designed around:
 
 ```text
 UNDERSTAND
@@ -107,7 +105,7 @@ DECIDE
 ACT
 ```
 
-The platform combines financial analysis, forecasting, scenario simulation and AI-powered explanations into one experience.
+Rather than simply displaying historical financial data, Future You brings together financial analysis, future projections, scenario simulation, goals and decision support.
 
 ---
 
@@ -115,9 +113,9 @@ The platform combines financial analysis, forecasting, scenario simulation and A
 
 ## 1. 💰 Safe-to-Spend
 
-**Safe-to-Spend** is the central financial metric of Future You.
+**Safe-to-Spend** is the central concept of Future You.
 
-Instead of assuming the entire account balance is available, Future You considers upcoming obligations and a safety buffer.
+Instead of assuming that the entire current balance is available, the platform considers upcoming obligations and a safety buffer.
 
 Conceptually:
 
@@ -129,13 +127,13 @@ Current Balance
 - Safety Buffer
 ```
 
-Users can understand:
+It is designed to help users understand:
 
 * What they currently have
 * What is already committed
-* What is expected to leave the account
+* What is expected to leave their account
 * What should remain protected
-* What is realistically available for discretionary spending
+* What may be available for discretionary spending
 
 ### Example
 
@@ -148,31 +146,31 @@ Safety Buffer          -₹1,739
 Safe-to-Spend         ₹1,33,561
 ```
 
-The exact values depend on the user's financial data.
+*Example values are illustrative and depend on the financial data available to the application.*
 
 ### Why it matters
 
-A normal banking application may show:
+A traditional banking application may show:
 
-> Balance: ₹1,50,000
+> **Balance: ₹1,50,000**
 
-Future You explains:
+Future You aims to provide additional context:
 
-> You may have approximately ₹1,33,561 available to spend safely after considering future commitments and your safety buffer.
+> **Approximately ₹1,33,561 may be available to spend safely after considering future commitments and the safety buffer.**
 
 ---
 
 # 2. 🔮 Future Balance
 
-Future You provides a forward-looking view of the user's financial position.
+Future You provides a forward-looking view of a user's financial position.
 
-Instead of looking only at past transactions, users can see how their balance may change over:
+Instead of focusing only on past transactions, the platform is designed to show how the balance may change over:
 
 * 30 days
 * 60 days
 * 90 days
 
-The projection can incorporate:
+Potential inputs include:
 
 * Expected salary
 * Recurring income
@@ -211,21 +209,23 @@ PLANNED
 PROJECTED
 ```
 
+This helps separate historical financial activity from estimated future activity.
+
 ---
 
 # 3. 💳 Can I Afford?
 
-**Can I Afford?** is the decision-making layer of Future You.
+**Can I Afford?** is the decision-support layer of Future You.
 
-Users enter a potential purchase amount and Future You evaluates the purchase against their broader financial position.
+Users can enter a potential purchase amount and evaluate it against their broader financial position.
 
-Instead of asking:
+Instead of only asking:
 
 ```text
 Current Balance > Purchase?
 ```
 
-Future You considers:
+Future You is designed to consider:
 
 * Safe-to-Spend
 * Upcoming commitments
@@ -249,29 +249,31 @@ Safe-to-Spend After Purchase
 ₹1,13,561
 
 90-Day Impact
-Calculated from projected cash flow
+Based on projected cash flow
 
 Goal Impact
-Calculated from financial goals
+Based on financial goals
 ```
+
+The decision-support result can be presented as:
 
 ### 🟢 SAFE
 
-The purchase remains within a healthy spending range.
+The purchase remains within the defined spending range.
 
 ### 🟡 CAUTION
 
-The purchase is possible but significantly reduces the financial buffer.
+The purchase may be possible but significantly reduces the financial buffer.
 
 ### 🔴 RISK
 
-The purchase may negatively affect future cash flow, goals or the safety buffer.
+The purchase may negatively affect projected cash flow, goals or the safety buffer.
 
 ---
 
 # 4. 🔄 What-If Simulator
 
-The **What-If** engine allows users to simulate hypothetical financial scenarios without changing their actual financial data.
+The **What-If** feature is designed to allow users to simulate hypothetical financial situations without changing their actual financial data.
 
 Examples:
 
@@ -289,7 +291,7 @@ What if I have an unexpected ₹10,000 expense?
 What if I buy a laptop?
 ```
 
-Future You compares:
+Future You can compare:
 
 ```text
 CURRENT SCENARIO
@@ -297,7 +299,7 @@ CURRENT SCENARIO
 SIMULATED SCENARIO
 ```
 
-and can show the effect on:
+and is designed to show potential changes to:
 
 * Safe-to-Spend
 * Future Balance
@@ -305,13 +307,17 @@ and can show the effect on:
 * Goal Progress
 * Financial Risk
 
+This turns financial planning into an interactive decision-making experience.
+
+> **Current scope:** the present version offers a defined set of representative scenarios (e.g. an unplanned expense, a delayed salary, a rent increase) rather than fully open-ended, freeform simulation. A more general scenario engine is part of the planned roadmap.
+
 ---
 
 # 5. 📊 Financial Health
 
-Future You provides an explainable financial health score.
+Future You is designed to provide an explainable financial health score.
 
-The score can consider:
+Potential factors include:
 
 * Savings rate
 * Expense-to-income ratio
@@ -321,30 +327,32 @@ The score can consider:
 * Spending consistency
 * Financial goals
 
-The platform should explain:
+The purpose is not simply to provide a score.
 
-> **Why is my score at this level?**
+The platform is designed to answer:
+
+> **"Why is my financial health at this level?"**
 
 and:
 
-> **What can I do to improve it?**
+> **"What can I do to improve it?"**
 
 ---
 
 # 6. 📈 Financial Insights
 
-Future You converts transaction patterns into understandable financial insights.
+Future You is designed to convert transaction patterns into understandable financial insights.
 
-Examples:
+Examples include:
 
 * Spending increased compared with the previous month
-* A recurring subscription is consuming part of monthly cash flow
+* A recurring subscription is affecting monthly cash flow
 * Upcoming commitments are concentrated within a short period
 * Savings rate is improving
-* A large purchase could delay a financial goal
+* A large purchase could affect a financial goal
 * Future cash flow may become tighter during a particular period
 
-Insights follow:
+The intended insight structure is:
 
 ```text
 WHAT HAPPENED?
@@ -358,7 +366,7 @@ WHAT CAN I DO?
 
 # 7. 🔁 Recurring Transaction Detection
 
-Future You can identify recurring financial patterns such as:
+Future You is designed to identify recurring financial patterns such as:
 
 * Salary
 * Rent
@@ -367,7 +375,7 @@ Future You can identify recurring financial patterns such as:
 * Bills
 * Regular income
 
-Recurring transactions can then be used by the projection engine to estimate future cash flow.
+Detected recurring patterns can then be used by the projection engine to support future cash-flow estimation.
 
 ---
 
@@ -396,7 +404,7 @@ Progress
 Estimated Completion
 ```
 
-Future You can also evaluate how major purchases may affect goal progress.
+Future You is designed to help users understand how major spending decisions may affect their goals.
 
 ---
 
@@ -437,7 +445,7 @@ Where supported, users can import financial data through formats such as:
 * CSV
 * XLSX
 
-Processing pipeline:
+The intended processing pipeline is:
 
 ```text
 UPLOAD
@@ -463,9 +471,11 @@ INSIGHTS
 
 ---
 
-# 🧠 AI Architecture
+# 🧠 AI Layer
 
-AI is used as an **intelligence and explanation layer**, not as the source of financial truth.
+Future You is **designed with an AI layer** that can enhance financial understanding and decision support.
+
+The AI layer is planned to work alongside the core financial engine rather than replace it.
 
 ```text
 Financial Data
@@ -474,27 +484,53 @@ Financial Engine
       ↓
 Structured Financial Facts
       ↓
-AI Explanation Layer
+Planned AI Layer
+      ↓
+Personalized Explanations & Insights
       ↓
 User
 ```
 
-### Important Principle
+## Planned AI Capabilities
 
-The financial engine calculates financial values.
+The AI layer is designed to support:
 
-AI explains those values.
+* Natural-language financial explanations
+* Personalized financial insights
+* Context-aware spending explanations
+* Scenario interpretation
+* Goal-oriented recommendations
+* Conversational financial assistance
 
-AI should not invent:
+### AI + Financial Engine
 
-* Account balances
-* Transactions
-* Income
-* Expenses
-* Dates
-* Financial calculations
+A key design principle is that **financial calculations should remain deterministic and data-driven**.
 
-If insufficient information is available, the application should clearly communicate that a reliable estimate cannot be produced.
+The financial engine is responsible for calculating values such as:
+
+* Safe-to-Spend
+* Current balance
+* Future balance
+* Upcoming commitments
+* Cash-flow projections
+* Goal progress
+* Scenario outcomes
+
+The planned AI layer would then use these structured results to explain them in simple, user-friendly language.
+
+```text
+Raw Financial Data
+        ↓
+Financial Calculations
+        ↓
+Structured Financial Results
+        ↓
+AI Interpretation
+        ↓
+Human-Friendly Explanation
+```
+
+> **Note:** AI-powered capabilities are part of the planned architecture and future development roadmap. They should not be interpreted as fully implemented AI-based financial advice unless explicitly available in the current application.
 
 ---
 
@@ -562,7 +598,8 @@ If insufficient information is available, the application should clearly communi
                 └──────────┼──────────┘
                            ▼
                   ┌─────────────────┐
-                  │ AI EXPLANATION  │
+                  │ PLANNED AI      │
+                  │ EXPLANATION     │
                   │ LAYER           │
                   └────────┬────────┘
                            │
@@ -630,14 +667,14 @@ Future You
 
 # 🛠️ Technology Stack
 
-### Frontend
+## Frontend
 
 * Next.js
 * React
 * TypeScript
 * Tailwind CSS
 
-### UI
+## UI
 
 * Responsive component architecture
 * Modern fintech interface
@@ -645,7 +682,7 @@ Future You
 * Accessible UI components
 * Mobile-friendly design
 
-### Financial Intelligence
+## Financial Intelligence
 
 * Transaction processing
 * Financial calculations
@@ -654,20 +691,23 @@ Future You
 * Scenario simulation
 * Financial health analysis
 
-### AI
+## AI — Planned
 
-* AI-powered explanations
-* Natural-language interaction
-* Insight generation
-* Decision-support assistance
+Future You is designed to support a future AI layer for:
 
-### Development
+* Natural-language financial explanations
+* Personalized insights
+* Scenario interpretation
+* Conversational financial assistance
+* Decision-support guidance
+
+## Development
 
 * v0
 * GitHub
 * TypeScript
 
-### Deployment
+## Deployment
 
 * Vercel
 
@@ -709,6 +749,8 @@ Future You
 ---
 
 # 🎬 Competition Demo Flow
+
+Future You is designed around a simple and memorable demonstration.
 
 ## Step 1 — Dashboard
 
@@ -782,7 +824,7 @@ SIMULATED
 
 ## Step 5 — Insights
 
-Show how Future You turns raw transactions into actionable information.
+Show how Future You turns financial information into actionable decision support.
 
 End with:
 
@@ -936,6 +978,8 @@ http://localhost:3000
 
 # 🌐 Deployment Architecture
 
+Future You follows a GitHub-based development and deployment workflow:
+
 ```text
 Developer
     ↓
@@ -949,6 +993,8 @@ Vercel
     ↓
 Production Application
 ```
+
+This workflow allows the project to be continuously developed while maintaining version control.
 
 ---
 
@@ -986,33 +1032,46 @@ The application should be tested for:
 
 # 🔮 Future Scope
 
-### Secure Financial Integrations
+## Secure Financial Integrations
 
 * Open-banking integrations
 * Multiple account synchronization
 * Real-time transaction updates
 
-### Advanced Forecasting
+## Advanced Forecasting
 
 * Improved cash-flow forecasting
 * Adaptive financial models
 * More personalized projections
 
-### Intelligent Financial Coaching
+## 🤖 AI-Powered Financial Intelligence
+
+Future You is designed to evolve with an AI layer capable of:
+
+* Explaining financial patterns in natural language
+* Generating personalized insights
+* Interpreting What-If scenarios
+* Helping users understand financial trade-offs
+* Providing conversational financial assistance
+* Supporting goal-oriented financial planning
+
+These capabilities represent **planned future development** and are not presented as fully implemented functionality unless explicitly available in the current application.
+
+## Intelligent Financial Coaching
 
 * Personalized financial habits
 * Goal optimization
 * Spending recommendations
 * Financial planning assistance
 
-### Advanced Decision Intelligence
+## Advanced Decision Intelligence
 
 * Larger scenario libraries
 * Multi-goal optimization
 * Risk forecasting
 * Personalized financial simulations
 
-### Broader Accessibility
+## Broader Accessibility
 
 * Voice-based financial interaction
 * Multilingual financial explanations
@@ -1028,7 +1087,7 @@ Future You is built around one simple idea:
 
 > **Money management shouldn't only explain your past. It should help you understand your future.**
 
-Instead of waiting until users realize they have overspent, Future You aims to help them understand the consequences **before they make the decision.**
+Instead of waiting until users realize they have overspent, Future You aims to help them understand the potential consequences **before they make the decision.**
 
 ---
 
@@ -1058,37 +1117,8 @@ Future You aims to become an intelligent financial companion that helps people m
 
 # Look at Your Future.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+---
 
-## Built with v0
+## Author
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
-
-[Continue working on v0 →](https://v0.app/chat/projects/prj_OdLW3wxJNgCPMuz1hAkEs58J2HqX)
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
-
-  Author-
-  Shreya Tembare
+Shreya Tembare
