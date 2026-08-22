@@ -41,11 +41,19 @@ export const inr = (n:number) => new Intl.NumberFormat('en-IN',{style:'currency'
 export function metrics(state: FinanceState) {
   const expenses = state.transactions.filter(t=>t.type==='expense').reduce((a,t)=>a+t.amount,0)
   const commitments = state.transactions.filter(t=>t.type==='expense'&&t.recurring).reduce((a,t)=>a+t.amount,0)
-  const safe = Math.max(0, state.balance + state.monthlyIncome - commitments - 25000)
-  const health = Math.min(100, Math.round((state.balance/(commitments*3))*100))
-  return { expenses, commitments, safe, health, healthBreakdown: { savings: 18, cashFlow: 14, buffer: 10, commitments: 6, stability: 4, goals: 0 } }
+  const variableExpenses = Math.max(0, expenses - commitments)
+  const safe = Math.max(0, state.balance - commitments - variableExpenses - 25000)
+  const health = commitments === 0 ? 100 : Math.min(100, Math.round((state.balance/(commitments*3))*100))
+  return { expenses, commitments, variableExpenses, safe, health, healthBreakdown: { savings: 18, cashFlow: 14, buffer: 10, commitments: 6, stability: 4, goals: 0 } }
 }
 export function projected(state:FinanceState, days:number) {
-  const daily = (state.monthlyIncome - metrics(state).expenses) / 30
-  return Math.round(state.balance + daily * days - (days > 25 ? 32000 : 0))
+  const start = new Date('2026-08-22T00:00:00')
+  const end = new Date(start)
+  end.setDate(end.getDate() + days)
+  const eventNet = state.events.filter(event => {
+    const date = new Date(`${event.date}T00:00:00`)
+    return date > start && date <= end
+  }).reduce((total, event) => total + (event.type === 'income' ? event.amount : -event.amount), 0)
+  const monthlyNet = state.monthlyIncome - metrics(state).expenses
+  return Math.round(state.balance + eventNet + (monthlyNet * days) / 30)
 }
